@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	visibility: visible !important;
+}
+
+.nav-link {
+	display: block;
+	color: #323330;
+	padding: 16px;
+	text-decoration: none;
+	/*border-bottom: solid 1px #595a55;*/
+}
+
+#navebar a.active {
+	background-color: #4caf50;
+	color: #323330;
+}
+
+#navbar a:hover:not(.active) {
+	background-color: #f0db4f;
+	color: #323330;
+}
+
+#main-doc {
+	/*position: absolute;*/
+	margin-left: 300px;
+	padding: 10px;
+	height: 100%;
+	max-width: 100%;
+}
+
+.main-section {
+	color: #323330;
+	line-height: 1.5;
+}
+
+.main-section header {
+	font-size: 32px;
+	padding: 0 20px 0 20px;
+	background-color: #f0db4f;
+}
+
+.main-section p {
+	font-size: 18px;
+	padding: 0 30px 0 30px;
+}
+
+.header {
+	font-size: 30px;
+	padding: 0 10px 0 20px;
+	border-bottom: solid 1px;
+}
+
+section a {
+	text-decoration: none;
+	color: white;
+	background-color: #323330;
+	opacity: 0.4;
+}
+
+section code {
+	background-color: #f8efb4;
+	width: 100%;
+	padding: 10px;
+	margin-left: 15px;
+}
+
+.li-style {
+	list-style-type: circle;
+}
+
+.section {
+	text-decoration: none;
+	color: #323330 !important;
+	padding: 5px;
+	background-color: white !important;
+	visibility: visible !important;
+}
+
+@media screen and (min-width: 700px) {
+	section a strong {
+		padding: none;
+		visibility: hidden;
+		display: none;
+		/*background-color: white !important;*/
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#navbar {
+		width: 100%;
+		height: auto;
+		position: relative;
+		text-align: center;
+	}
+	img {
+		display: none;
+	}
+	#navbar a {
+		float: none;
+		font-size: 24px;
+	}
+	main#main-doc {
+		margin-left: 0;
+	}
+	.header {
+		background-color: #f0db4f;
+		padding: 10px;
+		border: none;
+	}
+	main p {
+		padding: 0 10px 0 10px;
+	}
+	.main-section header {
+		padding: 0 20px 0 20px;
+		text-align: center;
+	}
+	.main-section p {
+		font-size: 18px;
+	}
+
+	.main-section ul {
+		font-size: 17px;
+	}
+
+	section a strong {
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#navbar a {
+		text-align: center;
+		float: none;
+	}
+}
